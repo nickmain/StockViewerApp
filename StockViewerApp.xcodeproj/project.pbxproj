@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		AB1662512B92715900FA72A9 /* StockViewerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1662502B92715900FA72A9 /* StockViewerAppTests.swift */; };
 		AB16625B2B92715900FA72A9 /* StockViewerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB16625A2B92715900FA72A9 /* StockViewerAppUITests.swift */; };
 		AB16625D2B92715900FA72A9 /* StockViewerAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB16625C2B92715900FA72A9 /* StockViewerAppUITestsLaunchTests.swift */; };
+		AB16626D2B92720900FA72A9 /* Stocks in Frameworks */ = {isa = PBXBuildFile; productRef = AB16626C2B92720900FA72A9 /* Stocks */; };
+		AB9A2F2B2B96934300BA0E51 /* PolygonAPIMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9A2F2A2B96934300BA0E51 /* PolygonAPIMock.swift */; };
+		AB9F467F2B9818F2006FC536 /* StockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F467E2B9818F2006FC536 /* StockListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		AB1662562B92715900FA72A9 /* StockViewerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockViewerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB16625A2B92715900FA72A9 /* StockViewerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewerAppUITests.swift; sourceTree = "<group>"; };
 		AB16625C2B92715900FA72A9 /* StockViewerAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewerAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AB16626A2B9271D200FA72A9 /* Stocks */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Stocks; sourceTree = "<group>"; };
+		AB9A2F2A2B96934300BA0E51 /* PolygonAPIMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonAPIMock.swift; sourceTree = "<group>"; };
+		AB9F467E2B9818F2006FC536 /* StockListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB16626D2B92720900FA72A9 /* Stocks in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +82,7 @@
 		AB1662322B92715700FA72A9 = {
 			isa = PBXGroup;
 			children = (
+				AB16626A2B9271D200FA72A9 /* Stocks */,
 				AB16623D2B92715700FA72A9 /* StockViewerApp */,
 				AB16624F2B92715900FA72A9 /* StockViewerAppTests */,
 				AB1662592B92715900FA72A9 /* StockViewerAppUITests */,
@@ -100,6 +108,8 @@
 				AB1662422B92715800FA72A9 /* Assets.xcassets */,
 				AB1662442B92715800FA72A9 /* StockViewerApp.entitlements */,
 				AB1662452B92715800FA72A9 /* Preview Content */,
+				AB9A2F2C2B96935000BA0E51 /* Testing */,
+				AB9F467E2B9818F2006FC536 /* StockListView.swift */,
 			);
 			path = StockViewerApp;
 			sourceTree = "<group>";
@@ -129,6 +139,14 @@
 			path = StockViewerAppUITests;
 			sourceTree = "<group>";
 		};
+		AB9A2F2C2B96935000BA0E51 /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				AB9A2F2A2B96934300BA0E51 /* PolygonAPIMock.swift */,
+			);
+			path = Testing;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +163,9 @@
 			dependencies = (
 			);
 			name = StockViewerApp;
+			packageProductDependencies = (
+				AB16626C2B92720900FA72A9 /* Stocks */,
+			);
 			productName = StockViewerApp;
 			productReference = AB16623B2B92715700FA72A9 /* StockViewerApp.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +238,9 @@
 				Base,
 			);
 			mainGroup = AB1662322B92715700FA72A9;
+			packageReferences = (
+				AB16626B2B92720900FA72A9 /* XCLocalSwiftPackageReference "Packages/Stocks" */,
+			);
 			productRefGroup = AB16623C2B92715700FA72A9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,6 +284,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB1662412B92715700FA72A9 /* ContentView.swift in Sources */,
+				AB9F467F2B9818F2006FC536 /* StockListView.swift in Sources */,
+				AB9A2F2B2B96934300BA0E51 /* PolygonAPIMock.swift in Sources */,
 				AB16623F2B92715700FA72A9 /* StockViewerAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,10 +460,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = foo.bar.StockViewerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -472,10 +498,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = foo.bar.StockViewerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -617,6 +643,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		AB16626B2B92720900FA72A9 /* XCLocalSwiftPackageReference "Packages/Stocks" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/Stocks;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB16626C2B92720900FA72A9 /* Stocks */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Stocks;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AB1662332B92715700FA72A9 /* Project object */;
 }

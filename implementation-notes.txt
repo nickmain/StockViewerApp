@@ -1,0 +1,13 @@
+
+
+Observations:
+
+ * API rate limit is 5 calls per minute. This is very restrictive.
+ * Only end-of-day data is available.
+ 
+I had to time-box this exercise to a single day, so the "Add Stock" search screen is rushed and still prone to hitting the rate limit.
+
+The user's selected stocks are saved to UserDefaults and restored upon launch. In order to provide a better first-launch experience (and since the Add Stock function is flakey) there are 3 initial stocks selected.
+
+The stock detail page is an MVP and needs more work.
+

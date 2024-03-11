@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,8 @@
 		AB1662512B92715900FA72A9 /* StockViewerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1662502B92715900FA72A9 /* StockViewerAppTests.swift */; };
 		AB16625B2B92715900FA72A9 /* StockViewerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB16625A2B92715900FA72A9 /* StockViewerAppUITests.swift */; };
 		AB16625D2B92715900FA72A9 /* StockViewerAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB16625C2B92715900FA72A9 /* StockViewerAppUITestsLaunchTests.swift */; };
-		AB16626D2B92720900FA72A9 /* Stocks in Frameworks */ = {isa = PBXBuildFile; productRef = AB16626C2B92720900FA72A9 /* Stocks */; };
+		AB964E402B9F7A1C0046912E /* PolygonAPI in Frameworks */ = {isa = PBXBuildFile; productRef = AB964E3F2B9F7A1C0046912E /* PolygonAPI */; };
+		AB964E422B9F7A1C0046912E /* Stocks in Frameworks */ = {isa = PBXBuildFile; productRef = AB964E412B9F7A1C0046912E /* Stocks */; };
 		AB9A2F2B2B96934300BA0E51 /* PolygonAPIMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9A2F2A2B96934300BA0E51 /* PolygonAPIMock.swift */; };
 		AB9F467F2B9818F2006FC536 /* StockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F467E2B9818F2006FC536 /* StockListView.swift */; };
 /* End PBXBuildFile section */
@@ -48,7 +49,7 @@
 		AB1662562B92715900FA72A9 /* StockViewerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockViewerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB16625A2B92715900FA72A9 /* StockViewerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewerAppUITests.swift; sourceTree = "<group>"; };
 		AB16625C2B92715900FA72A9 /* StockViewerAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewerAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		AB16626A2B9271D200FA72A9 /* Stocks */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Stocks; sourceTree = "<group>"; };
+		AB964E3D2B9F79CD0046912E /* Stocks */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Stocks; sourceTree = "<group>"; };
 		AB9A2F2A2B96934300BA0E51 /* PolygonAPIMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonAPIMock.swift; sourceTree = "<group>"; };
 		AB9F467E2B9818F2006FC536 /* StockListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,7 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB16626D2B92720900FA72A9 /* Stocks in Frameworks */,
+				AB964E402B9F7A1C0046912E /* PolygonAPI in Frameworks */,
+				AB964E422B9F7A1C0046912E /* Stocks in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,11 +84,12 @@
 		AB1662322B92715700FA72A9 = {
 			isa = PBXGroup;
 			children = (
-				AB16626A2B9271D200FA72A9 /* Stocks */,
+				AB964E3D2B9F79CD0046912E /* Stocks */,
 				AB16623D2B92715700FA72A9 /* StockViewerApp */,
 				AB16624F2B92715900FA72A9 /* StockViewerAppTests */,
 				AB1662592B92715900FA72A9 /* StockViewerAppUITests */,
 				AB16623C2B92715700FA72A9 /* Products */,
+				AB964E3E2B9F7A1C0046912E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +142,13 @@
 			path = StockViewerAppUITests;
 			sourceTree = "<group>";
 		};
+		AB964E3E2B9F7A1C0046912E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AB9A2F2C2B96935000BA0E51 /* Testing */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +174,8 @@
 			);
 			name = StockViewerApp;
 			packageProductDependencies = (
-				AB16626C2B92720900FA72A9 /* Stocks */,
+				AB964E3F2B9F7A1C0046912E /* PolygonAPI */,
+				AB964E412B9F7A1C0046912E /* Stocks */,
 			);
 			productName = StockViewerApp;
 			productReference = AB16623B2B92715700FA72A9 /* StockViewerApp.app */;
@@ -239,7 +250,6 @@
 			);
 			mainGroup = AB1662322B92715700FA72A9;
 			packageReferences = (
-				AB16626B2B92720900FA72A9 /* XCLocalSwiftPackageReference "Packages/Stocks" */,
 			);
 			productRefGroup = AB16623C2B92715700FA72A9 /* Products */;
 			projectDirPath = "";
@@ -644,15 +654,12 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		AB16626B2B92720900FA72A9 /* XCLocalSwiftPackageReference "Packages/Stocks" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = Packages/Stocks;
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		AB16626C2B92720900FA72A9 /* Stocks */ = {
+		AB964E3F2B9F7A1C0046912E /* PolygonAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PolygonAPI;
+		};
+		AB964E412B9F7A1C0046912E /* Stocks */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Stocks;
 		};
